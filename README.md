@@ -1,4 +1,5 @@
-<span style="color: red"> 本项目代码来自于https://github.com/hellojamie/ebatis.git,仅用于maven中心库上传使用 </span>
+<span style="color: red"> 本项目代码来自于https://github.com/hellojamie/ebatis.git
+	仅用于maven中心库上传使用 </span>
 # Ebatis
 
 用于解析excel表格内容到 java bean			
