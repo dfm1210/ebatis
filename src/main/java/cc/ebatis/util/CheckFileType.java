@@ -1,13 +1,11 @@
 package cc.ebatis.util;
 
-import java.io.File;
-import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 
 import cc.ebatis.emnu.FileType;
 import cc.ebatis.pojo.ActionContext;
-
+@SuppressWarnings("rawtypes")
 public class CheckFileType {
 	
 	public static String getByteStr(byte[] bytes){
@@ -35,10 +33,8 @@ public class CheckFileType {
     /** 
      * 判断文件类型 
      */  
-    public static FileType getType(ActionContext act) throws IOException {  
+    public static FileType getType( ActionContext act) throws IOException {  
         
-    	File file = act.getFile();
-    	
     	InputStream inputStream = act.getInputStream();
     	
         String fileHead = getFileHeader(inputStream);  
